@@ -11,6 +11,12 @@ const int SCREEN_HEIGHT = 480;
 SDL_Window *window = nullptr;
 SDL_Renderer *renderer = nullptr;
 
+
+//int filter(void *userdata, SDL_Event * event)
+//{
+//	throw runtime_error("Failed");
+//}
+
 int initSDL()
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
@@ -66,7 +72,9 @@ int main(int argv, char** argc)
 	SDL_RenderCopy(renderer,texBackground,NULL,NULL);
 	SDL_RenderPresent(renderer);
 
-	SDL_Event e;
+	//SDL_AddEventWatch(filter,NULL);
+		
+		SDL_Event e;
 	bool quit = false;
 	while(!quit)
 	{
