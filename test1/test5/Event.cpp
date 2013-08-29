@@ -3,6 +3,7 @@ using namespace std;
 
 Event::Event(void)
 {
+	mEvent.type = SDL_FIRSTEVENT;
 }
 
 

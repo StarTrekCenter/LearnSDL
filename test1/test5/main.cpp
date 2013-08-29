@@ -6,7 +6,7 @@ const int SCREEN_HEIGHT = 480;
 
 SDL_EventType funKeyDown(SDL_Event evt)
 {
-	return SDL_QUIT;
+	return (SDL_EventType)12;
 }
 
 int main(int argv, char** argc)
